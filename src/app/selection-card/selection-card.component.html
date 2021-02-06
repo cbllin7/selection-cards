@@ -1,35 +1,21 @@
 
-<div fxLayout="row wrap" fxLayoutGap="16px">
+<div fxLayout="row wrap" fxLayoutGap="5px">
+    <div fxflex="25%" *ngFor="let product of products">
         <mat-card class="selection-card">
             <mat-card-header>
                 <div mat-card-avatar class="selection-header-image"></div>
-                <mat-card-title>A Title</mat-card-title>
-                <mat-card-subtitle>Something Here</mat-card-subtitle>
+                <mat-card-title>{{product.ProductName}}</mat-card-title>
+                <mat-card-subtitle>{{product.PriceForProduct}}</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image>
             <mat-card-content>
                 <p>
-                    Image above
+                    {{product.ProductImage}}
                 </p>
             </mat-card-content>
             <mat-card-actions>
                 <button mat-button>Select</button>
             </mat-card-actions>
         </mat-card>
-        <mat-card class="selection-card">
-            <mat-card-header>
-                <div mat-card-avatar class="selection-header-image"></div>
-                <mat-card-title>A Title</mat-card-title>
-                <mat-card-subtitle>Something Here</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image>
-            <mat-card-content>
-                <p>
-                    Image above
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>Select</button>
-            </mat-card-actions>
-        </mat-card>
+    </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Products } from '../Shared/Products';
 
 @Component({
   selector: 'selection-card',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectionCardComponent implements OnInit {
 
+  @Input() products: Array<Products>;
   constructor() { }
 
   ngOnInit(): void {
