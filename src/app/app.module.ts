@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SelectionCardComponent } from './selection-card/selection-card.component';
+import { SelectionListComponent } from './selection-list/selection-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material-module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SelectionCardComponent,
+    SelectionListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
