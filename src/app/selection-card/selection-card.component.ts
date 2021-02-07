@@ -13,6 +13,7 @@ export class SelectionCardComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  // Apply acction here for when Card is clicked
   onSelectionClick(product: Products): void {
     console.log('Selected Product' , product);
   }
