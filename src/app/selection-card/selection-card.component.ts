@@ -11,7 +11,10 @@ export class SelectionCardComponent implements OnInit {
   @Input() products: Array<Products>;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  onSelectionClick(product: Products): void {
+    console.log('Selected Product' , product);
   }
 
 }

@@ -1,7 +1,7 @@
 
 <div fxLayout="row wrap" fxLayoutGap="5px">
     <div fxflex="25%" *ngFor="let product of products">
-        <mat-card class="selection-card">
+        <mat-card class="selection-card" (click)="onSelectionClick(product)">
             <mat-card-header>
                 <div mat-card-avatar class="selection-header-image"></div>
                 <mat-card-title>{{product.ProductName}}</mat-card-title>
